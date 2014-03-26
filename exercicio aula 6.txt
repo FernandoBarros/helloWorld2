@@ -1,0 +1,10 @@
+select temp.participante, temp.turma, pes.nome as professor from 
+
+(
+select 
+	p.nome as participante, t.nome as turma, t.profe
+from
+	participante par inner  join pessoa p  on(par.pessoa = p.pessoa_cod)
+	inner join turma t on (t.turma_cod = par.turma)
+) temp
+inner join pessoa pes on (temp.profe = pes.pessoa_cod)	
