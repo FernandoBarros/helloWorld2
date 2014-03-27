@@ -1,5 +1,5 @@
 select temp.participante, temp.turma, pes.nome as professor from 
-
+teste
 (
 select 
 	p.nome as participante, t.nome as turma, t.profe
